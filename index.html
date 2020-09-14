@@ -1,0 +1,96 @@
+﻿<!--  
+
+-->
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>网易云音乐打卡_网易云音乐一键听歌300首_网易云音乐刷等级</title>
+  <meta name="keywords" content="网易云音乐刷等级,网易云音乐打卡,网易云音乐听歌300首">
+  <meta name="description" content="本站是能提供用户一键刷网易云音乐当天听不同歌300首达到刷等级的目的。">
+  <script src="/js/md5.min.js"></script>
+  <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="/css/font-awesome.min.css" rel="stylesheet"/>
+  <script src="/js/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/oneui.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="shortcut icon" href="img/NetEase_music.png">
+  <script src="/js/bootstrap.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://libs.useso.com/js/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <img style="background: linear-gradient(to bottom,	#FFFAF0,#EEA2AD);"  class="full-bg full-bg-bottom" ondragstart="return false;" oncontextmenu="return false;">
+ <br/>
+<div class="col-xs-12 col-sm-10 col-md-8 col-lg-5 center-block" style="float: none;">
+<div class="panel panel-default">
+	<div class="panel-body" style="text-align: center;">
+		<img src="img/logo.png" style="max-width: 100%;">
+	</div>
+</div>
+<div class="panel panel-info">
+<div align="center" class="list-group-item reed" style="background:#EE3B3B;"><h2 class="panel-title"><font size=2 color="#fff"><b>暂时只支持手机号登录，邮箱的请绑定手机哦~</b></font></h2>
+	</div>
+	<div class="panel-body" style="text-align: center;">
+            <div id="load" class="alert alert-danger" style="display:none;"></div>
+			<div id="login" class="list-group-item">
+			<div class="form-group">
+			<div class="input-group"><div class="input-group-addon">手机号码</div>
+			<input type="text" id="uin" value="" class="form-control" placeholder="请输入您的网易云音乐手机号" onkeydown="if(event.keyCode==13){submit.click()}"/>
+			</div></div>
+			<div class="form-group">
+			<div class="input-group"><div class="input-group-addon">登录密码</div>
+			<input type="password" id="pwd" value="" class="form-control" placeholder="请输入您的网易云音乐密码" onkeydown="if(event.keyCode==13){submit.click()}"/>
+			</div></div>			
+			<button type="button" id="submit" class="btn btn-danger btn-block" style="background:#FF6A6A;">立即登录</button>
+			<br/>
+			</div>
+		</div>
+	</div>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne" style="background:#EE3B3B;">
+      <h4 class="panel-title" align="center">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <font size=2 color="#fff"><i class="fa fa-volume-up"></i>&nbsp;&nbsp;<b>常见问题</b></font> <!-- 点常见问题几个字可以折叠起来 本来想默认折叠状态 但是实在不堪入目就这样吧... -->
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+<p>Q:源码作者是谁？</p>
+<p>A:这个我也不清楚，我是转载来的。</p><hr/>
+<p>Q:这个程序是干嘛的？</p>
+<p>A:网易云一键签到，一键听满300首歌，刷等级。</p><hr/>
+<p>Q:使用这个会影响我的听歌风格吗？</p>
+<p>A:刷的歌都来自您的每日推荐歌单，不影响。</p><hr/>
+<p>Q:为什么我关注了陌生人？</p>
+<p>A:关注的是站长，仅用作统计，介意可以取关。</p><hr/>
+<p>Q:为什么点击刷歌打卡只刷了一部分？</p>
+<p>A:这是网易云官方问题,您可以多点击几次。</p><hr/>
+<p>Q:源码在哪里可以下载到？</p>
+<p>A:点击这里：<a href="http://luqiao6.com/ffc8/56af" target="_blank">路桥博客</a>，下载</p><hr/>
+<p>Q:如何修改源码中的自动关注？</p>
+<p>A:修改api.PHP 72行的ID即可。</p>
+
+      </div>
+    </div>
+  </div>
+  </div>
+<div class="panel panel-info">
+<div class="panel-body" style="text-align: center;">
+友情链接：<a href="http://luqiao6.com" target="_blank">路桥博客</a> <script type="text/javascript" src="//js.users.51.la/20691919.js"></script></script><hr/><font color="#9F0021">CopyRight <i class="fa fa-heart text-danger"></i> 2020 | 网易云打卡</font>
+</div>
+</div>
+</div>
+<script src="//lib.baomitu.com/layer/2.3/layer.js"></script>
+<!-- <script type="text/javascript">
+layer.msg('注意：本站仅供自娱自乐<br>切勿用于非法用途、利益交易<br>本站不为您的使用方式做任何责任<br>如果本站侵犯了您的权益<br>请联系邮箱87690855@qq.com关闭站点',{time:6000, shift: 6},function(){});
+</script> -->
+<!-- 这个是进站弹窗，不需要可以删掉，或者自己改内容 -->
+<script src="js/ajax.js"></script>
+</body>
+</html>
